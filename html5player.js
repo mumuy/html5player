@@ -16,7 +16,7 @@ function html5player(id,param,callback){
 		'autoplay':false,		//是否自动播放
 		'startTime': 0,			//音频播放开始时间点
 		'loop':false,			//是否循环播放
-		'preload':'meta',		//是否预加载音频，meta确保在不加载音频流的情况下获取音频信息
+		'preload':'meta'		//是否预加载音频，meta确保在不加载音频流的情况下获取音频信息
 	}
 	var options = extend(defaults,param);
 	//对象定义
