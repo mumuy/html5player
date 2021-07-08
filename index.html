@@ -23,7 +23,15 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-			audioPlayer(document.querySelector('.mod-audioPlayer .player'));
+			var $module = document.querySelector('.mod-audioPlayer');
+			audioPlayer($module.querySelector('.player'),{
+				'onPlay':function(){
+	        		$module.querySelector('.machine').classList.add('machine-on');
+	        	},
+	        	'onPause':function(){
+	        		$module.querySelector('.machine').classList.remove('machine-on');
+	        	}
+			});
 		</script>
 	</body>
 </html>
