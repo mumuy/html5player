@@ -21,8 +21,8 @@
         callback = callback || function(){};
         //对象定义
         var $this = element;
-        var src = $this.getAttribute('data-src');
-        var title = $this.getAttribute('data-title');
+        var src = $this.getAttribute('data-src')||'';
+        var title = $this.getAttribute('data-title')||'';
         var options = Object.assign({
             'prefix' : 'widget',    // 控件样式前缀
             'title':title,          // 音频标题
